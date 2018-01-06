@@ -81,6 +81,7 @@ echo && echo "Installing base packages..."
 sleep 3
 sudo apt-get -y install \
     wget \
+    unzip \
     git \
     libevent-dev \
     libboost-dev \
@@ -127,7 +128,7 @@ rm poliscore-1.1.0-linux.zip
 # Install polis
 echo && echo "Installing poliscore-1.0.0..."
 sleep 3
-sudo mv ~/poliscore-1.1.0/usr/local/bin/polis{d,-cli} /usr/local/bin
+sudo mv ~/poliscore-1.1.0-linux/usr/local/bin/polis{d,-cli} /usr/local/bin
 
 # Create config for poliscore
 echo && echo "Configuring poliscore-1.1.0..."
