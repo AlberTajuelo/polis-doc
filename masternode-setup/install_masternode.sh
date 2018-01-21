@@ -93,7 +93,9 @@ sudo apt-get -y install \
     libboost-thread-dev \
     libdb4.8-dev \
     libdb4.8++-dev \
-    libminiupnpc-dev 
+    libminiupnpc-dev \
+    unzip \
+    libzmq5
 
 # Install fail2ban if needed
 if [[ ("$install_fail2ban" == "y" || "$install_fail2ban" == "Y" || "$install_fail2ban" == "") ]]; then
