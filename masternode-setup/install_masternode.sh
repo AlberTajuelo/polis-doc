@@ -81,6 +81,7 @@ echo && echo "Installing base packages..."
 sleep 3
 sudo apt-get -y install \
     wget \
+    unzip \
     git \
     libevent-dev \
     libboost-dev \
