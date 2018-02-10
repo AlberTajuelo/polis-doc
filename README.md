@@ -13,7 +13,9 @@ If you are new to Polis I recommend that you start by reading the [Beginner's Gu
 
 Then you can read different guides that we have prepared so you can learn in the fastest way:
 
- * [Setup a Masternode with Ubuntu 16.04 VPS](https://github.com/polispay/polis-doc/tree/master/masternode-setup)
+* [How to back up your Polis wallet](https://github.com/polispay/polis-doc/tree/master/backup-wallet).
+* [Setup a Masternode with Ubuntu 16.04 VPS](https://github.com/polispay/polis-doc/tree/master/masternode-setup).
+
 
 ## License
 
