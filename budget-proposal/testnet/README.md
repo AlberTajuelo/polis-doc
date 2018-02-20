@@ -6,18 +6,18 @@
 Before you start working with governance proposal on testnet, you need to make sure you are running the polisd daemon on testnet. To do so you need to compile the source master branch. (The poliscore version 1.2.1 compilation comes with errors on testnet, it will be fixed on 1.2.2 release)
 To compile from source you can read documentation here:
 
-Compile for windows: https://github.com/polispay/polis/blob/master/doc/build-windows.md
-Compile for OSX: https://github.com/polispay/polis/blob/master/doc/build-osx.md
-Compile for Linux: https://github.com/polispay/polis/blob/master/doc/build-unix.md
+* Compile for windows: https://github.com/polispay/polis/blob/master/doc/build-windows.md
+* Compile for OSX: https://github.com/polispay/polis/blob/master/doc/build-osx.md
+* Compile for Linux: https://github.com/polispay/polis/blob/master/doc/build-unix.md
 
 ## Starting Daemon on testnet
 
-To start the daemon on test network you need to change your polis.conf parameters adding the line testnet=1
+To start the daemon on test network you need to change your polis.conf parameters adding the line ```testnet=1```
 You can find the polis.conf on the following paths:
 
-Windows: %APPDATA%\polisCore.
-Linux: ~/.poliscore.
-macOS: ~/Library/Application Support/polisCore
+* Windows: ```%APPDATA%\polisCore.```
+* Linux: ```~/.poliscore.```
+* macOS: ```~/Library/Application Support/polisCore```
 
 ## Starting proposal
 
@@ -34,6 +34,7 @@ The webpage is going to show the process on how to submit the proposal to the ne
 To vote for your own proposal you must have a masternode enabled on the testnet. To do it, you need to follow the same process as the mainnet but using daemons connected to the testnet.
 
 Once the daemon the masternode is enabled you must run the command from the debug console:
-polis-cli gobject vote-many GOBJECT-HASH funding yes
 
-If the governance object gets more than the 10% of MN votes as funding, you will receive the payment on the next superblock.
+```polis-cli gobject vote-many GOBJECT-HASH funding yes```
+
+If the governance object gets more than the 10% of MN votes as funding, you will receive the payment on the next superblock.  
