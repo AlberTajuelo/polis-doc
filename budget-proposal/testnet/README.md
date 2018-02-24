@@ -3,12 +3,7 @@
 # How to create a budget proposal (testnet)
 
 ## Before you start
-Before you start working with governance proposal on testnet, you need to make sure you are running the polisd daemon on testnet. To do so you need to compile the source master branch. (The poliscore version 1.2.1 compilation comes with errors on testnet, it will be fixed on 1.2.2 release)
-To compile from source you can read documentation here:
-
-* Compile for windows: https://github.com/polispay/polis/blob/master/doc/build-windows.md
-* Compile for OSX: https://github.com/polispay/polis/blob/master/doc/build-osx.md
-* Compile for Linux: https://github.com/polispay/polis/blob/master/doc/build-unix.md
+Before you start working with governance proposal on testnet, you need to make sure you are running the polisd daemon on testnet. To do so you need to download the wallet as normal (make sure you are running v1.2.2).
 
 ## Starting Daemon on testnet
 
