@@ -1,3 +1,5 @@
+![Polis](https://github.com/polispay/polis-doc/raw/master/resources/polis.png "Polis")
+
 # Setup a Masternode with Ubuntu 16.04 VPS
 
 In this guide you will learn how to prepare a Polis Masternode in Ubuntu version 16.04 VPS. Before you start, you need to meet the initial requirements.
@@ -236,7 +238,7 @@ nano /etc/systemd/system/polisd.service
 With following info:
 ```
 [Unit]
-Description=polisdm
+Description=polisd
 After=network.target
 [Service]
 Type=simple
@@ -248,7 +250,6 @@ Restart=on-abort
 [Install]
 WantedBy=multi-user.target
 ```
-
 
 ```
 systemctl enable polisd
@@ -327,9 +328,32 @@ mn1 1.2.3.4:24126 3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 12345678xxxxxxxxxxx
 
 Congratulations! You have just owned a Polis Master Node. A master node helps improve the network and provide the network with certain anonymous and fast payments functions, also including governance functions.
 
+## How can I check my masternode is working?
+
+Assuming you are using the hot/cold wallet as recommended in our guides, check the following:
+
+1. On Windows/Mac wallet masternode tab
+The status field is ENABLED and the Active field is greater than 0:00.
+
+2. In Windows/Mac wallet debug console
+Type `masternode list-conf` and ensure everything looks correct, particularly that "status" : "ENABLED".
+
+3. On linux vps (via PuTTY)
+Type `polis-cli masternode status` and look for "message" : "Masternode successfully started".
+
+4. Check [Masternode list](https://polis-ninja.org/#mnlistdetail)
+Search for your masternode by IP Address or wallet address. Ensure that:
+a. Port shows as 24126 as is green. Red means you need to port forward and/or create firewall rule. White means wait a while!
+b. Status is ENABLED.
+c. Daemon Version is 1.2.2.
+d. Active Time is > 0 and increases over time.
+e. Last Seen is less than 1 hour.
+
+If all these checks are successful, your masternode is working correctly. You may have to wait over 40 hours for your FIRST reward.
+
 ### Future improvements
 
 * Create masternode user (move Polis files to user home).
-* Masternode user should be who launch Polis service and cron job.
-* Create swap to improve OS.
+* Masternode user should launch Polis service and cron job (and not root user).
+* Create swap to improve OS performance.
 * Increase security with UFW (Uncomplicated Firewall).
