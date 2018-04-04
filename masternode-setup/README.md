@@ -251,6 +251,8 @@ Restart=on-abort
 WantedBy=multi-user.target
 ```
 
+CTRL X to save it. Y for yes, then ENTER.
+
 ```
 systemctl enable polisd
 ```

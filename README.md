@@ -17,6 +17,7 @@ Then you can read different guides that we have prepared so you can learn in the
 * [How to back up your Polis wallet](https://github.com/polispay/polis-doc/tree/master/backup-wallet).
 * [Setup a Masternode with Ubuntu 16.04 VPS](https://github.com/polispay/polis-doc/tree/master/masternode-setup).
 * [Upgrade version v1.2.1 to v1.2.2](https://github.com/polispay/polis-doc/tree/master/upgrade-version-v1-2-1-to-v1-2-2)
+* [Upgrade version v1.2.2 to v1.3.0](https://github.com/polispay/polis-doc/tree/master/upgrade-version-v1-2-2-to-v1-3-0)
 
 ## License
 
