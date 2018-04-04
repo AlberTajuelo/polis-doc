@@ -1,6 +1,6 @@
 ![Polis](https://github.com/polispay/polis-doc/raw/master/resources/polis.png "Polis")
 
-# Upgrade Masternode v1.2.1 to v1.2.2
+# Upgrade Masternode v1.2.2 to v1.3.0
 
 In this guide you will learn how to upgrade your Polis Masternode in Ubuntu version 16.04 VPS.
 
@@ -9,7 +9,7 @@ Before you start, you need to meet the initial requirements:
 * Remote: Ubuntu 16.04 64 bit.
 * Polis Version: 1.2.1 (Installed using guide from polis-doc).
 
-Note: Upgrade to v1.2.2 is a mandatory upgrade. Remember that v1.2.1 or lower are no longer supported.
+Note: Upgrade to v1.3.0 from v1.2.2 is not a mandatory upgrade.
 
 ## Upgrade steps
 
@@ -30,19 +30,19 @@ cd
 ```
 
 ```
-wget https://github.com/polispay/polis/releases/download/v1.2.2/poliscore-1.2.2-linux64.tar.gz
+wget https://github.com/polispay/polis/releases/download/v1.3.0/poliscore-1.3.0-x86_64-linux-gnu.tar.gz
 ```
 
 ```
-tar -xvf poliscore-1.2.2-linux64.tar.gz
+tar -xvf poliscore-1.3.0-x86_64-linux-gnu.tar.gz
 ```
 
 ```
-rm poliscore-1.2.2-linux64.tar.gz
+rm poliscore-1.3.0-x86_64-linux-gnu.tar.gz
 ```
 
 ```
-cp poliscore-1.2.2/bin/polis{d,-cli} /usr/local/bin
+cp poliscore-1.3.0/bin/polis{d,-cli} /usr/local/bin
 ```
 
 Run again Polis daemon:
@@ -67,11 +67,11 @@ If you write following command:
 watch polis-cli getinfo
 ```
 
-Version field should be "1020200".
+Version field should be "1030000".
 
 ```
 {
-  "version": 1020200,
+  "version": 1030000,
 ...
   "errors": ""
 }
